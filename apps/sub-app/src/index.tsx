@@ -5,16 +5,16 @@ import Layout from '@/components/layout';
 const root = createRoot(document.getElementById('app')!);
 import './normalize.css';
 import './index.css';
-if (window.__POWERED_BY_WUJIE__) {
-  window.__WUJIE_MOUNT = () => {
-    render();
-  };
-  window.__WUJIE_UNMOUNT = () => {
-    root.unmount();
-  };
-} else {
-  render();
-}
+// if (window.__POWERED_BY_WUJIE__) {
+//   window.__WUJIE_MOUNT = () => {
+//     render();
+//   };
+//   window.__WUJIE_UNMOUNT = () => {
+//     root.unmount();
+//   };
+// } else {
+//   render();
+// }
 
 function render() {
   root.render(
@@ -25,3 +25,4 @@ function render() {
     </React.StrictMode>,
   );
 }
+render();

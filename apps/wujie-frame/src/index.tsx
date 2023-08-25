@@ -6,7 +6,7 @@ import Layout from '@/components/layout';
 import './normalize.css';
 import './index.css';
 setupApp({
-  name: 'sub-app',
+  name: 'subapp',
   url: 'http://localhost:8081',
   exec: true,
   sync: true,

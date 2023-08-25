@@ -7,7 +7,16 @@ export default [
   {
     path: '/a',
     name: '1',
-    to: '/',
     component: 'a',
   },
+  {
+    path: '/subapp',
+    name: '副应用',
+    component: 'subapp',
+  },
+  {
+    path: '/subapp/:path',
+    name: '副应用',
+    component: 'subapp',
+  }
 ];

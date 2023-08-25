@@ -33,7 +33,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.0",
     "react-use": "^17.4.0",
-    "wujie": "^1.0.18"
+    "wujie": "^1.0.18",
+    "wujie-react": "^1.0.18"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
