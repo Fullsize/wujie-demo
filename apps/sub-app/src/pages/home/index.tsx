@@ -5,8 +5,8 @@ import './index.css';
 const Page = () => {
   return (
     <div className={styles['constainer']}>
-      <div className="name">home</div>
-      <div className={styles['name']}>home</div>
+      <div className="name">副应用</div>
+
       {/* <img src={bg} alt="" /> */}
       <div></div>
     </div>

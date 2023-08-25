@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=1536 NODE_ENV=development webpack serve -c webpack/webpack.dev.js",
+    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=1536 NODE_ENV=development PORT=8081 webpack serve -c webpack/webpack.dev.js",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=1536 NODE_ENV=production webpack -c webpack/webpack.prod.js",
     "lint": "eslint --ext .tsx,.jsx,.js,.ts, src/ --fix",
     "lint-staged": "lint-staged"

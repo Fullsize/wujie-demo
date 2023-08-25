@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "pnpm -C ./apps/wujie-frame dev & pnpm -C ./apps/sub-app dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .tsx,.jsx,.js,.ts, src/ --fix",
     "lint-staged": "lint-staged"
