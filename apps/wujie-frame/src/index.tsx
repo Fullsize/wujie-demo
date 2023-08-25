@@ -7,7 +7,7 @@ import './normalize.css';
 import './index.css';
 setupApp({
   name: 'subapp',
-  url: 'http://localhost:8081',
+  url: '//localhost:8081',
   exec: true,
   sync: true,
 });

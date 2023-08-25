@@ -5,18 +5,12 @@ import { useNavigate, useLocation } from 'react-router-dom';
 export default function Vite() {
   const location = useLocation();
   const navigation = useNavigate();
-  const path = location.pathname
-    .replace('/subapp', '')
-    .replace('/subapp', '')
-    .replace('/', ''); ////
-  const viteUrl = `http://localhost:8081/` + path;
+  const path = location.pathname.replace('/subapp', '').replace('/', ''); ////
+  const viteUrl = `http://localhost:8081/#/` + path;
+  console.log(15, path);
   const props = {
-    jump: (name: string, query: any) => {
+    jump: (name: string) => {
       navigation(`/${name}`);
-      const url = new URL(window.location.href);
-      url.search = query;
-      // 手动的挂载url查询参数
-      window.history.replaceState(null, '', url.href);
     },
   };
 
