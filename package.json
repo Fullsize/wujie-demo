@@ -1,0 +1,13 @@
+{
+  "name": "wujie-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -C ./apps/wujie-frame dev & pnpm -C ./apps/sub-app dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
