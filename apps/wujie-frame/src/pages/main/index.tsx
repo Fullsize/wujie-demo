@@ -8,15 +8,15 @@ const items = [
     label: '主应用',
     children: [
       {
-        key: '/',
+        key: '',
         label: '首页',
       },
       {
-        key: 'about',
+        key: '/about',
         label: 'about',
       },
       {
-        key: 'router',
+        key: '/router',
         label: 'router',
       },
     ],
@@ -26,11 +26,11 @@ const items = [
     label: 'react18',
     children: [
       {
-        key: 'subapp',
+        key: '/subapp',
         label: '首页',
       },
       {
-        key: 'subapp/a',
+        key: '/subapp/a',
         label: 'a',
       },
     ],
