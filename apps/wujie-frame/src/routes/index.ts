@@ -10,11 +10,7 @@ export default [
         name: '首页',
         component: 'home',
       },
-      {
-        path: ':path',
-        name: '1',
-        component: 'home',
-      },
+
       {
         path: '/subapp',
         name: '副应用',
@@ -32,7 +28,11 @@ export default [
           }
         ]
       },
-
+      {
+        path: ':path',
+        name: '2',
+        component: 'home',
+      },
     ]
   },
 

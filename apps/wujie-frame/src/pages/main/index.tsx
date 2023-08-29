@@ -39,7 +39,7 @@ const items = [
 const Page = () => {
   const navigate = useNavigate();
   const menuclick = (e: any) => {
-    navigate(e.key);
+    navigate(e.key, { replace: true });
   };
   return (
     <div className={styles['constainer']}>
