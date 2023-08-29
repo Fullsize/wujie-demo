@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+
 export default [
   {
     path: '/',
@@ -11,9 +11,9 @@ export default [
         component: 'home',
       },
       {
-        path: '/a',
+        path: ':path',
         name: '1',
-        component: 'a',
+        component: 'home',
       },
       {
         path: '/subapp',

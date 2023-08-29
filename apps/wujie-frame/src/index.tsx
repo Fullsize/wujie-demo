@@ -1,10 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
-import { setupApp, preloadApp } from 'wujie';
+import { preloadApp } from 'wujie';
 import Layout from '@/components/layout';
 import './normalize.css';
 import './index.css';
+
 preloadApp({
   name: 'subapp',
   url: '//localhost:8081',

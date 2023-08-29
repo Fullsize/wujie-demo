@@ -1,19 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Outlet, useParams } from 'react-router-dom';
 import styles from './index.module.css';
 import './index.css';
 const Page = () => {
+  const { path } = useParams();
   return (
     <div className={styles['constainer']}>
-      <div className="name">无界主应用</div>
-      <div>
-        <Link to="/subapp">subapp</Link>
-      </div>
-      <div>
-        <Link to="/subapp/a">subapp/a</Link>
-      </div>
-      {/* <img src={bg} alt="" /> */}
-      <div></div>
+      <h1>
+        主应用页面
+        {!!path && ':' + path}
+      </h1>
+      <Outlet></Outlet>
     </div>
   );
 };

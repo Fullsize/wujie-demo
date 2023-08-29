@@ -3,17 +3,34 @@ import { Menu } from 'antd';
 import { Outlet, useNavigate } from 'react-router-dom';
 import styles from './index.module.css';
 const items = [
-  { key: '/', label: '首页' },
+  {
+    key: '/',
+    label: '主应用',
+    children: [
+      {
+        key: '/',
+        label: '首页',
+      },
+      {
+        key: 'about',
+        label: 'about',
+      },
+      {
+        key: 'router',
+        label: 'router',
+      },
+    ],
+  },
   {
     key: '/subapp',
     label: 'react18',
     children: [
       {
-        key: '/subapp',
+        key: 'subapp',
         label: '首页',
       },
       {
-        key: '/a',
+        key: 'subapp/a',
         label: 'a',
       },
     ],

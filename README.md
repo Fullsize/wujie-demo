@@ -1,5 +1,7 @@
 # 无界测试
 
+主应用为`http://localhost:8080`
+
 ## install pnpm
 
 ```shell

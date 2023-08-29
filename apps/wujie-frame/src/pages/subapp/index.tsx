@@ -7,7 +7,7 @@ export default function Vite() {
   const navigation = useNavigate();
   const path = location.pathname.replace('/subapp', '').replace('/', ''); ////
   const viteUrl = `http://localhost:8081/#/` + path;
-  console.log(15, path);
+  console.log(15, viteUrl);
   const props = {
     jump: (name: string) => {
       navigation(`/${name}`);
