@@ -4,6 +4,7 @@ import styles from './index.module.css';
 import './index.css';
 const Page = () => {
   const { path } = useParams();
+
   return (
     <div className={styles['constainer']}>
       <h1>

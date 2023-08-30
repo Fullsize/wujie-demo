@@ -11,11 +11,6 @@ export default function Vite() {
   const props = {
     jump: (name: string, query: any) => {
       navigation(`/${name}`);
-      console.log(14, name);
-      const url = new URL(window.location.href);
-      url.search = query;
-      // 手动的挂载url查询参数
-      window.history.replaceState(null, '', url.href);
     },
   };
 
